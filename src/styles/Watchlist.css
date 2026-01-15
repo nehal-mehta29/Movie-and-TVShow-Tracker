@@ -1,0 +1,73 @@
+/*=========================== Remove Button Styling ===========================*/
+
+.remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #CB6CE6; 
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+
+.movie-grid > div:hover .remove-button {
+    opacity: 1;
+}
+
+.remove-button:hover {
+    background-color: #632a7d; 
+}
+
+/*Responsive Styling */
+@media (max-width: 1024px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .remove-button {
+        top: 9px;
+        right: 9px;
+        padding: 5px 12px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .remove-button {
+        top: 8px;
+        right: 8px;
+        padding: 4px 10px;
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .remove-button {
+        top: 5px;
+        right: 5px;
+        padding: 3px 8px;
+        font-size: 0.7em;
+    }
+}

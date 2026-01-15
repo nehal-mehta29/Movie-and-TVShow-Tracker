@@ -1,0 +1,184 @@
+/*=========================== Homepage Styling ===========================*/
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Welcome section styling */
+.welcome-message {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background: linear-gradient(180deg, #0d0d0d 0%, #151515 100%);
+}
+
+/* Welcome section heading styling */
+.welcome-message h1 {
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 198, 255, 0.4); /* Neon glow effect */
+}
+
+.welcome-message p {
+    font-size: 1.5em;
+    color: #c8c7c7;
+    margin-top: 10px;
+}
+
+/* General homepage styling */
+.home-section {
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+/* Homepage section heading */
+.home-section h2 {
+    color: #e0e0e0;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    position: relative;
+    display: inline-block;
+}
+
+/* Underline gradient effect for section heading */
+.home-section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #00C6FF, #CB6CE6);
+}
+
+/* Scroll container for movie and TV show sections */
+.home-scroll {
+    display: flex;
+    overflow-x: auto; 
+    padding: 20px 0;
+    gap: 25px;
+    scrollbar-color: #00C6FF #333;
+    scrollbar-width: thin;
+}
+
+/* Individual card inside the scroll container */
+.home-scroll .movie-card-link {
+    flex-shrink: 0;
+    width: 220px;
+    text-decoration: none;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #000000;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #1a1a1a;
+}
+
+/*=========================== Responsive Design ===========================*/
+
+/* Medium screens (tablets & small laptops) */
+@media (max-width: 1024px) {
+    .welcome-message {
+        padding: 50px 15px 25px;
+    }
+
+    .welcome-message h1 {
+        font-size: 2.4em;
+    }
+
+    .welcome-message p {
+        font-size: 1.3em;
+    }
+
+    .home-section {
+        padding: 0 35px;
+    }
+
+    .home-section h2 {
+        font-size: 1.6em;
+    }
+
+    .home-scroll .movie-card-link {
+        width: 180px;
+    }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+    .welcome-message {
+        padding: 40px 15px 20px;
+    }
+
+    .welcome-message h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-message p {
+        font-size: 1.1em;
+    }
+
+    .home-section {
+        padding: 0 25px;
+        margin-bottom: 40px;
+    }
+
+    .home-section h2 {
+        font-size: 1.3em;
+    }
+
+    .home-scroll .movie-card-link {
+        width: 140px;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 0.85em;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .welcome-message {
+        padding: 30px 10px 15px;
+    }
+
+    .welcome-message h1 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    .welcome-message p {
+        font-size: 1em;
+    }
+
+    .home-section {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .home-section h2 {
+        font-size: 1.1em;
+    }
+
+    .home-scroll {
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .home-scroll .movie-card-link {
+        width: 120px;
+    }
+
+    .footer {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+}

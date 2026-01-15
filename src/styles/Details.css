@@ -1,0 +1,205 @@
+/*=========================== Detail Page Styling ===========================*/
+
+/*Main conatiner for details page*/
+.detail-card {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #1a1a1a; 
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*Title styling*/
+.detail-card h1 {
+    color: #ffffff; 
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.3); /*Neon like effect*/
+}
+
+/*Poster styling*/
+.detail-card img {
+    width: 300px;
+    min-height: 450px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.detail-card p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin: 10px 0;
+    max-width: 800px;
+    color: #aaaaaa; 
+}
+
+.detail-card strong {
+    color: #ffffff; 
+}
+
+.detail-card span {
+    color: #00C6FF; 
+    font-size: 1.2em;
+}
+
+/*Message styling for loading or no data message*/
+.detail-message {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 100px;
+    color: #aaaaaa; 
+}
+
+/*Button Styling*/
+.button {
+    background: linear-gradient(to right, #00C6FF, #CB6CE6); 
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 198, 255, 0.6); 
+}
+
+/* Cast List Styling*/
+.detail-card h3 {
+    color: #CB6CE6; 
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*Cast list container styling*/
+.detail-card ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.detail-card ul li {
+    background-color: #242424;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 1em;
+    border-left: 3px solid #00C6FF; 
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .detail-card {
+        max-width: 90%;
+        padding: 25px;
+    }
+
+    .detail-card h1 {
+        font-size: 2em;
+    }
+
+    .detail-card img {
+        width: 260px;
+        min-height: 390px;
+    }
+
+    .detail-card p {
+        font-size: 1em;
+        max-width: 700px;
+    }
+
+    .detail-card h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-card {
+        padding: 20px;
+    }
+
+    .detail-card h1 {
+        font-size: 1.6em;
+    }
+
+    .detail-card img {
+        width: 220px;
+        min-height: 330px;
+    }
+
+    .detail-card p {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .detail-card h3 {
+        font-size: 22px;
+    }
+
+    .detail-card ul li {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .detail-card h1 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .detail-card img {
+        width: 180px;
+        min-height: 270px;
+        margin-bottom: 20px;
+    }
+
+    .detail-card p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .detail-card h3 {
+        font-size: 20px;
+    }
+
+    .detail-card ul li {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
